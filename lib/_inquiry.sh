@@ -208,7 +208,7 @@ inquiry_options() {
   printf "   [2] Eliminar CRMwp\n"
   printf "   [3] Bloquear CRMwp\n"
   printf "   [4] Desbloquear CRMwp\n"
-  printf "   [5] Alter. dominio CRMwp\n"
+  printf "   [5] Alterar dominio CRMwp\n"
   printf "\n"
   read -p "> " option
 
