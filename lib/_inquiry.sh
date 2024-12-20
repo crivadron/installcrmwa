@@ -11,7 +11,7 @@ get_mysql_root_password() {
 get_link_git() {
   
   print_banner
-  printf "${WHITE} 💻 Ingresa el enlace GITHUB de tu Z1crm que deseas instalar:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el enlace GITHUB de tu CRMwp que deseas instalar:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " link_git
 }
@@ -35,7 +35,7 @@ get_max_whats() {
 get_max_user() {
   
   print_banner
-  printf "${WHITE} 💻 Ingrese la cantidad de Usuarios que se ${instancia_add} puedan registrarse:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingrese la cantidad de Usuarios que en ${instancia_add} puedan registrarse:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " max_user
 }
@@ -43,7 +43,7 @@ get_max_user() {
 get_frontend_url() {
   
   print_banner
-  printf "${WHITE} 💻 Ingrese el dominio FRONTEND/PAINEL para el ${instancia_add}:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingrese el dominio FRONTEND/PANEL para ${instancia_add}:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " frontend_url
 }
@@ -51,7 +51,7 @@ get_frontend_url() {
 get_backend_url() {
   
   print_banner
-  printf "${WHITE} 💻 Ingrese el dominio BACKEND/API para el ${instancia_add}:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingrese el dominio BACKEND/API para ${instancia_add}:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " backend_url
 }
@@ -59,7 +59,7 @@ get_backend_url() {
 get_frontend_port() {
   
   print_banner
-  printf "${WHITE} 💻 Introduzca el puerto FRONTEND para el ${instancia_add}; Ej: 3000 A 3999 ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Introduzca el puerto FRONTEND para ${instancia_add}; Ej: 3000 A 3999 ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " frontend_port
 }
@@ -76,7 +76,7 @@ get_backend_port() {
 get_redis_port() {
   
   print_banner
-  printf "${WHITE} 💻 Ingrese el puerto REDIS/AGENDAMENTO MSG para el ${instancia_add}; Ej: 5000 A 5999 ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingrese el puerto REDIS/AGENDAMIENTO MSG para ${instancia_add}; Ej: 5000 A 5999 ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " redis_port
 }
@@ -124,7 +124,7 @@ get_empresa_dominio() {
 get_alter_frontend_url() {
   
   print_banner
-  printf "${WHITE} 💻 Ingrese el dominio NEW FRONTEND/PAINEL para el ${empresa_dominio}:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingrese el dominio NUEVO del FRONTEND/PANEL para ${empresa_dominio}:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " alter_frontend_url
 }
@@ -132,7 +132,7 @@ get_alter_frontend_url() {
 get_alter_backend_url() {
   
   print_banner
-  printf "${WHITE} 💻 Ingrese el NUEVO dominio BACKEND/API para el ${empresa_dominio}:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingrese el NUEVO dominio BACKEND/API para ${empresa_dominio}:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " alter_backend_url
 }
@@ -201,14 +201,14 @@ software_dominio() {
 inquiry_options() {
   
   print_banner
-  printf "${WHITE} 💻 Bienvenido a Z1crm Manager - Servicio ilimitado, seleccione la siguiente acción a continuación!${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Bienvenido a CRMwp Manager - Servicio ilimitado, seleccione la siguiente acción a continuación!${GRAY_LIGHT}"
   printf "\n\n"
-  printf "   [0] Instalar Z1crm\n"
-  printf "   [1] Actualizar Z1crm\n"
-  printf "   [2] Eliminar Z1crm\n"
-  printf "   [3] Bloquear Z1crm\n"
-  printf "   [4] Desbloquear Z1crm\n"
-  printf "   [5] Alter. dominio Z1crm\n"
+  printf "   [0] Instalar CRMwp\n"
+  printf "   [1] Actualizar CRMwp\n"
+  printf "   [2] Eliminar CRMwp\n"
+  printf "   [3] Bloquear CRMwp\n"
+  printf "   [4] Desbloquear CRMwp\n"
+  printf "   [5] Alter. dominio CRMwp\n"
   printf "\n"
   read -p "> " option
 
