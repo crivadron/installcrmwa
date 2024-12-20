@@ -9,7 +9,7 @@
 #######################################
 system_create_user() {
   print_banner
-  printf "${WHITE} 💻 Agora, vamos criar o usuário para a instancia...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ahora, creemos el usuario para la instancia...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -29,7 +29,7 @@ EOF
 #######################################
 system_git_clone() {
   print_banner
-  printf "${WHITE} 💻 Fazendo download do código Z1crm...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Descargando el código CRMwp...${GRAY_LIGHT}"
   printf "\n\n"
 
 
@@ -49,7 +49,7 @@ EOF
 #######################################
 system_update() {
   print_banner
-  printf "${WHITE} 💻 Vamos atualizar o sistema Z1crm...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos atualizar o sistema CRMwp...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -71,7 +71,7 @@ EOF
 #######################################
 deletar_tudo() {
   print_banner
-  printf "${WHITE} 💻 Vamos deletar o Z1crm...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Eliminemos CRMwp...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -102,7 +102,7 @@ EOF
   sleep 2
 
   print_banner
-  printf "${WHITE} 💻 Remoção da Instancia/Empresa ${empresa_delete} realizado com sucesso ...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Eliminación de la Instancia/Empresa ${empresa_delete} llevado a cabo con éxito ...${GRAY_LIGHT}"
   printf "\n\n"
 
 
@@ -117,7 +117,7 @@ EOF
 #######################################
 configurar_bloqueio() {
   print_banner
-  printf "${WHITE} 💻 Vamos bloquear o Z1crm...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Bloqueemos a CRMwp...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -130,7 +130,7 @@ EOF
   sleep 2
 
   print_banner
-  printf "${WHITE} 💻 Bloqueio da Instancia/Empresa ${empresa_bloquear} realizado com sucesso ...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Bloqueo de Instancia/Empresa ${empresa_bloquear} llevado a cabo con éxito...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -144,7 +144,7 @@ EOF
 #######################################
 configurar_desbloqueio() {
   print_banner
-  printf "${WHITE} 💻 Vamos Desbloquear o Z1crm...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Desbloquear a CRMwp...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -157,7 +157,7 @@ EOF
   sleep 2
 
   print_banner
-  printf "${WHITE} 💻 Desbloqueio da Instancia/Empresa ${empresa_desbloquear} realizado com sucesso ...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Desbloquear la Instancia/Empresa ${empresa_desbloquear} realizado con exito...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -170,7 +170,7 @@ EOF
 #######################################
 configurar_dominio() {
   print_banner
-  printf "${WHITE} 💻 Vamos Alterar os Dominios do Z1crm...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Cambiemos los dominios CRMwp...${GRAY_LIGHT}"
   printf "\n\n"
 
 sleep 2
@@ -262,7 +262,7 @@ EOF
   sleep 2
 
   print_banner
-  printf "${WHITE} 💻 Alteração de dominio da Instancia/Empresa ${empresa_dominio} realizado com sucesso ...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Cambio de dominio de la Instancia/Empresa ${empresa_dominio} realizado con exito...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -281,7 +281,7 @@ system_node_install() {
   sleep 2
 
   sudo su - root <<EOF
-  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
   apt-get install -y nodejs
   sleep 2
   npm install -g npm@latest
@@ -336,7 +336,7 @@ EOF
 #######################################
 system_puppeteer_dependencies() {
   print_banner
-  printf "${WHITE} 💻 Instalando puppeteer dependencies...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Instalando dependencias puppeteer...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
